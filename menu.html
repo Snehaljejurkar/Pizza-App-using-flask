@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+</head>
+<body>
+<h2>Available pizzas:</h2>
+<ol>
+<!-- For loop logic of jinja template -->
+{%for i in range(0, len)%}
+
+    <li>{{Pizzas[i]}}</li>
+{%endfor%}
+
+</ol>
+
+<h2>Your orders:</h2>
+<a href="/orders/order1">Order1</a><br>
+<a href="/orders/order2">Order2</a><br>
+
+
+</body>
+</html>
